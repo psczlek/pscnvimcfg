@@ -11,6 +11,7 @@ return {
           transparency = true,
         },
 
+        -- terminal's background = #1f1f1f
         highlight_groups = {
           ColorColumn = {bg = '#404040'},
           LineNr = {fg = '#606060'},
@@ -20,6 +21,13 @@ return {
 
       vim.cmd.colorscheme('rose-pine-moon')
     end
+  },
+
+  {
+    'folke/tokyonight.nvim',
+    lazy = false,
+    priority = 1000,
+    opts = {},
   },
 
   -- ...
