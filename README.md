@@ -1,3 +1,3 @@
 ### TODO
 
-- [ ] Add LSP config
+- [X] Add LSP config
