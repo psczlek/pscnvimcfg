@@ -50,6 +50,7 @@ return {
             luasnip.lsp_expand(args.body)
           end,
         },
+
         completion = { completeopt = 'menu,menuone,noinsert' },
 
         mapping = cmp.mapping.preset.insert {
@@ -69,7 +70,17 @@ return {
               luasnip.jump(-1)
             end
           end, { 'i', 's' }),
+          ['K'] = cmp.mapping(function(fallback)
+            if cmp.visible_docs() then
+              cmp.close_docs()
+            elseif cmp.visible() then
+              cmp.open_docs()
+            else
+              fallback()
+            end
+          end),
         },
+
         sources = {
           { name = 'nvim_lsp' },
           { name = 'luasnip' },
