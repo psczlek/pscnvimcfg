@@ -12,7 +12,7 @@ set("n", "<C-l>", "<C-w>l")
 set("n", "<leader>L", "<cmd>Lazy<cr>")
 
 -- nvim-tree
-set("n", "<C-n>", "<cmd>NvimTreeToggle<cr>")
+set("n", "<C-.>", "<cmd>NvimTreeToggle<cr>")
 
 -- bufferline
 set("n", "<S-l>", "<cmd>BufferLineCycleNext<cr>")
