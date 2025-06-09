@@ -1,14 +1,14 @@
-vim.api.nvim_create_autocmd("FileType", {
+vim.api.nvim_create_autocmd('FileType', {
 	pattern = {
-    "lua",
-    "json",
-    "yml",
-    "yaml",
-    "rb",
-    "html",
-    "css",
-    "js",
-    "ts",
+    'lua',
+    'json',
+    'yml',
+    'yaml',
+    'rb',
+    'html',
+    'css',
+    'js',
+    'ts',
   },
 
 	callback = function()

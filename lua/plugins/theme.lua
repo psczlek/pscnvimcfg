@@ -26,15 +26,7 @@ return {
     lazy = false,
     priority = 1000,
     config = function()
-      require('tokyonight').setup({
-        transparent = true,
-        styles = {
-          sidebars = 'transparent',
-          floats = 'transparent',
-        },
-      })
-
-      vim.cmd.colorscheme('tokyonight-moon')
+      require('tokyonight').setup()
     end
   },
 
@@ -83,12 +75,19 @@ return {
         invert_tabline = false,
         invert_intend_guides = false,
         inverse = true,
-        contrast = '',
+        contrast = 'hard',
         palette_overrides = {},
-        overrides = {},
+        overrides = {
+          ['@punctuation.bracket'] = { fg = '#e1d2ab' },
+          ['@punctuation.delimiter'] = { fg = '#e1d2ab' },
+          ['@punctuation.special'] = { fg = '#e1d2ab' },
+          ['@punctuation'] = { fg = '#e1d2ab' },
+        },
         dim_inactive = false,
         transparent_mode = true,
       })
+
+      vim.cmd.colorscheme('gruvbox')
     end,
   },
 }
