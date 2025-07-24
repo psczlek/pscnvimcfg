@@ -87,7 +87,7 @@ return {
         transparent_mode = true,
       })
 
-      vim.cmd.colorscheme('gruvbox')
+      vim.cmd.colorscheme('embark-theme')
     end,
   },
 }
