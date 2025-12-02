@@ -28,7 +28,7 @@ endif
 
 " Space
 let s:space0 = { "gui": "#100E23", "cterm": "232", "cterm16": "0"}
-let s:space1 = { "gui": "#1f1f1f", "cterm": "234", "cterm16": "NONE"}
+let s:space1 = { "gui": "#171717", "cterm": "234", "cterm16": "NONE"}
 let s:space2 = { "gui": "#505050", "cterm": "233", "cterm16": "NONE" }
 let s:space3 = { "gui": "#404040", "cterm": "238", "cterm16": "8"}
 let s:space4 = { "gui": "#606060", "cterm": "240", "cterm16": "8"}
